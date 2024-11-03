@@ -5,7 +5,17 @@ meta {
 }
 
 post {
-  url: https://jhhqwn3twg.execute-api.us-east-1.amazonaws.com/prod/create
-  body: none
-  auth: none
+  url: https://jhhqwn3twg.execute-api.us-east-1.amazonaws.com/prod/groups
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imp3ZXJrbWVpQGdtYWlsLmNvbSIsImlhdCI6MTczMDY0MzkyMCwiZXhwIjoxNzMwNjQ3NTIwfQ.se5sjcn1MHQZJuOQhDzWFrFWLpbXVNRT8zZuujCvx-0
+}
+
+body:json {
+  {
+    "name": "Grupo Ej1"
+  }
 }
