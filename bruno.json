@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "DIAG-CURSO4-T1",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
