@@ -1,0 +1,21 @@
+meta {
+  name: create group
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{apiURL}}/prod/groups
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imp3ZXJrbWVpQGdtYWlsLmNvbSIsImlhdCI6MTczMDc1Mzk4MiwiZXhwIjoxNzMwNzU3NTgyfQ.85Rqw51lnytZCbVW2cAD8CbjJK2_mwODjkLkG0JHqpE
+}
+
+body:json {
+  {
+    "name": "Grupo 3"
+  }
+}
