@@ -5,7 +5,15 @@ meta {
 }
 
 post {
-  url: {{apiURL}}/groups/
-  body: none
-  auth: none
+  url: {{apiURL}}/prod/groups/01JBWFN24NAN9R08NP21NCKZ5Z/join
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imp3ZXJrbWVpQGdtYWlsLmNvbSIsImlhdCI6MTczMDc1NDU2OCwiZXhwIjoxNzMwNzU4MTY4fQ.BAHBedQPui3_p_rAskWABLO2QAHQw-4mUgsZNwMppRo
+}
+
+body:json {
+  {"name": "Jurgen Werkmeister"}
 }
